@@ -1,0 +1,22 @@
+{
+
+  "manifest_version": 2,
+  "name": "P collapser",
+  "version": "1.0",
+
+  "description": "Adds functionality to collapse paragraphs.",
+
+  "icons": {
+    "48": "icons/arrow-48.png",
+	"96": "icons/arrow-96.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["collapserApp.js"],
+	  "css": ["collapserStyle.css"]
+    }
+  ]
+
+}

@@ -1,0 +1,11 @@
+p {
+	pointer-events: none;
+	position: relative;
+}
+
+p::before {
+	content: "↕️";
+	position: absolute;
+	left: -30px;
+	pointer-events: all;
+}
